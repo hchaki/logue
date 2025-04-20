@@ -2,7 +2,7 @@
   "name": "logue",
   "version": "1.0.0",
   "description": "A repository for logue project",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/index.html --open",
@@ -15,6 +15,8 @@
     "phaser": "^3.60.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.0"
   }
 }
