@@ -4,15 +4,20 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
+    "sourceMap": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "sourceMap": true,
     "outDir": "./dist",
+    "baseUrl": ".",
     "paths": {
-      "*": ["./node_modules/*"]
-    }
+      "~/*": ["src/*"]
+    },
+    "lib": ["ESNext", "DOM"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts"],
   "exclude": ["node_modules", "dist"]
 }
